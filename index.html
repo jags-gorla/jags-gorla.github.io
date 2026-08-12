@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Jagadeesh Gorla</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="I build and operate autonomous machine learning systems in unforgiving environments.">
+<meta name="author" content="Jagadeesh Gorla">
+<link rel="canonical" href="https://jags-gorla.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jagadeesh Gorla">
+<meta property="og:title" content="Jagadeesh Gorla">
+<meta property="og:description" content="I build and operate autonomous machine learning systems in unforgiving environments.">
+<meta property="og:url" content="https://jags-gorla.github.io/">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --paper: #f8f5ef;
+    --rule: #d8d2c4;
+    --muted: #6b6659;
+    --muted-soft: #a49e90;
+    --poster-red: #BC1E2E;
+    --serif: Charter, 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+    --condensed: Impact, 'Haettenschweiler', 'Arial Narrow Bold', 'Franklin Gothic Bold', sans-serif;
+    --measure: 50rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f0ead9; --paper: #12100c; --rule: #2a2620; --muted: #a49e90; --muted-soft: #55504a; }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: var(--serif); font-size: 18px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+  }
+  .page { max-width: var(--measure); margin: auto; padding: 4rem 1.5rem; width: 100%; }
+  h1 {
+    font-size: 2rem; line-height: 1.15; margin: 0 0 0.5rem;
+    font-weight: 700; letter-spacing: -0.01em;
+  }
+  .role {
+    font-family: var(--condensed); font-size: 0.72rem; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--poster-red); margin: 0 0 2.2rem;
+  }
+  p.bio { margin: 0 0 1.2rem; text-wrap: pretty; }
+  p.bio:last-of-type { margin-bottom: 2.2rem; }
+  .bio a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .bio a:hover { border-bottom-color: var(--poster-red); color: var(--poster-red); }
+  nav {
+    border-top: 1px solid var(--rule); padding-top: 1.4rem;
+    display: flex; flex-wrap: wrap; gap: 1.8rem;
+  }
+  nav a {
+    font-family: var(--condensed); font-size: 0.74rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--muted); text-decoration: none;
+    border-bottom: 2px solid transparent; padding-bottom: 2px;
+  }
+  nav a:hover { color: var(--poster-red); border-bottom-color: var(--poster-red); }
+  nav a.here { color: var(--ink); border-bottom-color: var(--poster-red); }
+  .credits {
+    margin: 0 0 2.6rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.55rem 1.1rem;
+  }
+  .credits dt {
+    font-family: var(--condensed); font-size: 0.7rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--poster-red); padding-top: 0.16rem;
+  }
+  .credits dd {
+    margin: 0; font-family: var(--condensed); font-size: 0.72rem; letter-spacing: 0.13em;
+    text-transform: uppercase; color: var(--muted); line-height: 1.75;
+  }
+  @media (max-width: 480px) {
+    .credits { grid-template-columns: 1fr; gap: 0.2rem 0; }
+    .credits dd { margin-bottom: 0.7rem; }
+  }
+  .cols {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem;
+    margin: 2.2rem 0 0; padding: 1.6rem 0 0.6rem;
+    border-top: 1px solid var(--rule);
+  }
+  .cols h2 {
+    font-family: var(--condensed); font-size: 0.7rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--poster-red); margin: 0 0 0.9rem; font-weight: 400;
+  }
+  .cols ul { list-style: none; margin: 0 0 0.4rem; padding: 0; }
+  .cols li {
+    font-size: 0.9rem; line-height: 1.55; color: var(--muted);
+    margin: 0 0 0.85rem; text-wrap: pretty;
+  }
+  .cols a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .cols a:hover { color: var(--poster-red); border-bottom-color: var(--poster-red); }
+  .industry {
+    margin: -0.6rem 0 2.4rem; padding-bottom: 1.4rem;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.9rem; line-height: 1.6; color: var(--muted); text-wrap: pretty;
+  }
+  .industry span {
+    display: block; font-family: var(--condensed); font-size: 0.7rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--poster-red); margin-bottom: 0.5rem;
+  }
+  .coda { margin: 1.8rem 0 2.4rem; }
+  @media (max-width: 860px) {
+    .cols { grid-template-columns: 1fr; gap: 1.6rem; }
+  }
+  @media (max-width: 480px) {
+    h1 { font-size: 1.7rem; }
+    nav { gap: 1.2rem; }
+  }
+</style>
+<body>
+  <div class="page">
+    <h1>Jagadeesh Gorla</h1>
+    <p class="role">Entrepreneur · Researcher</p>
+
+    <p class="bio">I build and operate autonomous machine learning (ML) systems in unforgiving
+    environments requiring micro- to millisecond latency, built with coding agents.</p>
+
+    <div class="cols">
+      <section>
+        <h2>Entrepreneurship</h2>
+        <ul>
+          <li>At present, building an ML infrastructure company for developing and running
+          low-latency models in unforgiving environments</li>
+          <li>Founded and ran a creative automation software company for twelve years&nbsp;— the
+          platform behind some of the well-known creative campaigns (e.g., for IKEA, Danone, Olay
+          and Unilever)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Research</h2>
+        <ul>
+          <li>PhD in Computer Science at <a href="https://www.ucl.ac.uk/computer-science/">UCL</a>
+          as a Microsoft Research Cambridge scholar and recipient of a UK government Dorothy
+          Hodgkin award&nbsp;— a unified probabilistic model of relevance, a problem open for
+          thirty years</li>
+          <li>Published at WWW and AAAI; presented at O’Reilly Strata; featured in the Financial
+          Times</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Industry</h2>
+        <ul>
+          <li>ML and AI at Meta&nbsp;— search, wearables, ads</li>
+          <li>Content discovery at scale&nbsp;— Deutsche Telekom’s Magenta TV, RuneScape, Channel 4,
+          and the Xbox recommender team at Microsoft, serving hundreds of millions of users</li>
+        </ul>
+      </section>
+    </div>
+
+    <p class="bio coda">Before any of it, I trained as a primary school teacher and taught physics
+    and maths for a living — at every level from school to engineering and graduate programmes,
+    across India and the UK.</p>
+
+    <nav>
+      <a href="./essays/">Notes</a>
+      <a href="https://github.com/jags-gorla">GitHub</a>
+      <a href="https://www.linkedin.com/in/jgorla">LinkedIn</a>
+    </nav>
+  </div>
+  <script data-goatcounter="https://jags.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
