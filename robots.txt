@@ -1,0 +1,7 @@
+# https://jags-gorla.github.io/
+# All crawlers welcome, including AI/LLM crawlers.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://jags-gorla.github.io/sitemap.xml
